@@ -21,4 +21,11 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* How to run develop environment
+
+```bash
+$ dokcer-compose build
+$ docker-compose run --rm -w /myapp web yarn upgrade
+$ docker-compose run --rm -w /myapp web rake db:create
+$ dokcer-compose up -d
+````
